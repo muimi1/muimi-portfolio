@@ -1,1 +1,22 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ContextAlert from '../components/ContextAlert.astro';
+import Markdown from '../components/Markdown.astro';
 
+const explainer = `
+Welcome to my page
+I'm a fast learning software developer ,ready to tackle challlenges that come my way.
+I'm a quick learner eager to become the best in this field of software engineering
+2025 is my year of breakthrough
+Click here to view my skills .
+`;
+---
+
+<Layout title="Welcome to Astro.">
+    <ContextAlert class="mb-4" />
+    <h1 class="mb-10">My portfolio website</h1>
+    <Markdown content={explainer} class="text-lg mb-10" />
+    <p class="mb-8">
+        <a href="https://docs.netlify.com/frameworks/astro/" class="btn btn-lg btn-primary sm:btn-wide">Skills</a>
+    </p>
+</Layout>
